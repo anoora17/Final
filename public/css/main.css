@@ -1,0 +1,570 @@
+/*        Browser Reset         */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/*        HTML5 display-role reset for older browsers         */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-size: 18px;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* -----------------  COLOR GUIDE -----------------
+    _____________
+    Oranges:
+
+    Images / Orange Headings #e79433
+    Solid / Dark Orange Headings #bd6010
+    _____________
+    Hot Pink:
+
+    #bc1642
+
+    _____________
+    Black:
+
+    #0f0f0f
+    #111406 (greenish black)
+
+    _____________
+    White:
+
+    #f4f3f2
+-----------------------------------------------------*/
+/* -------------------Clearing–––––––––––––––––––––– */
+.clear-fix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clear {
+   clear: both;
+}
+/* -------------------Main styles-------------------*/
+.container {
+    width: 100%;
+}
+
+body {
+  font-family: Roboto, Calibri, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  background-color: #756483;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0 0 1.5em 0;
+  color: #f4f3f2;
+  max-width: 700px;
+}
+
+button {
+  display: block;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: Roboto, Calibri, Helvetica, Arial, sans-serif;
+  color: #d19beb; 
+}
+
+.content-area {
+  padding: 40px;
+  height: 90vh;
+  clear: both;
+  position: relative;
+  min-height: 580px;
+  max-height: 1500px;
+}
+
+.content-area h1, .content-area h2 {
+  font-family: "Roboto Condensed";
+}
+.content-area h2 {
+  font-size: 2.4414em; 
+  line-height: 1.2288; 
+  margin:  0 0 0.6144em 0;  
+  color: #d19beb;
+
+}
+
+/* --------------- Main Navigation ------------------ */
+
+.main-nav {
+  background-color: rgba(0,0,0,.3);
+  width: 100%;
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+}
+
+.logo img {
+  width: 250px;
+}
+
+.main-nav li {
+    text-transform: uppercase;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #262626;
+}
+
+.main-nav ul a {
+   display: block;
+   padding: 20px 0;
+   color: #f4f3f2;
+   font-weight: 300;
+   width: 100%;
+}
+  .main-nav ul a:visited {
+     color: #a3a3a3;
+  }
+  .main-nav ul a:hover {
+     color: #d19beb;
+     transition: .5s all;
+  }
+  .main-nav ul a:active {
+     color: #bd6010;
+  }
+
+@media screen and (min-width: 980px){
+  .logo {
+      float: left;
+      width: 150px;
+  }
+
+    .main-nav ul a:first-of-type {
+      margin-left: 50px;
+  }
+} /* close min-width: 980px */
+
+@media screen and (min-width: 1280px){
+  .logo {
+     width: 300px;
+  }
+
+  .logo img {
+    width: 300px;
+  }
+
+  .main-nav li {
+    border-bottom: none;
+  }
+
+  .main-nav ul a {
+     display: block;
+     padding: 20px 0;
+     width: 11.6%;
+     
+     margin-top: 10px;
+     float: left;
+  }
+
+  .donate {
+    display: block;
+  }
+
+    .main-nav .donate a {
+      border: 1px solid #8b8a8a;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+      .main-nav .donate a:hover {
+          border: 1px solid #a8143c;
+          transition: 1s all;
+        }
+} /* close min-width: 1280px */
+
+/* ------------------- Links ------------------*/
+
+a {
+  color: #bc1642;
+  text-decoration: none;
+  font-weight: 500;
+  }
+
+  a:active {
+    color: #e79433;
+  }
+
+/* --------------- Hero section ------------------ */
+.hero {
+  height: 80vh;
+  background-image: url(../images/bees-hero.jpg);
+  background-size: cover;
+}
+
+.hero-content {
+  padding: 30px;
+  min-width: 350px;
+  width: 29%;
+  position: relative;
+  z-index: 100;
+  
+}
+
+.hero h1 {
+  font-size: 1.9531em;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  line-height: 1.536;
+  margin: 0.768em 0 0 0;
+  color: #833d00;
+}
+
+.hero p {
+  font-size: 1.25em;
+  line-height: 1.5;
+  margin: 1.2em 0 0 0;
+  color: #121212;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+}
+
+@media screen and (min-width: 300px){
+  .hero-content {
+    float: right;
+    margin-top: 130px;
+    top: -15px;
+    left: -20px;
+  }
+
+  .hero {
+    min-height: 700px;
+  }
+} /* close min-width: 300px */
+
+@media screen and (min-width: 600px){
+  .hero-content {
+    float: right;
+    margin-top: 150px;
+    top: 60px;
+    width: 50%;
+    max-width: 500px;
+  }
+
+  .hero {
+    background: none;
+  }
+
+} /* close min-width: 600px */
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hero {
+    height: 90vh;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .hero-content {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .hero-content {
+    background: none;
+  }
+
+  .hero h1 {
+    color: #ff7600;
+  }
+
+  .hero p {
+    color: #f5f5f5;
+  }
+}
+
+/* --------------- What is CCD section ------------------ */
+.what-is-ccd {
+  background-color: #756483;
+}
+  .what-is-ccd .image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+@media screen and (min-width: 350px) {
+
+  .what-is-ccd {
+    height: auto;
+  }
+
+  .what-is-ccd .content {
+    margin: 0 0 50px 0;
+  }
+}
+
+@media screen and (min-width: 523px) {
+
+  .what-is-ccd {
+    height: 90vh;
+    min-height: 900px;
+  }
+
+  .what-is-ccd .image img {
+    margin-top: 0px;
+    width: 350px;
+    margin-left: 11%;
+  }
+} /* close 523px media query */
+
+@media screen and (min-width: 703px) {
+
+  .what-is-ccd .content {
+    float: left;
+    margin-left: 5.8%;
+  }
+  .what-is-ccd .image {
+    min-height: 200px;
+  }
+  .what-is-ccd .image img {
+     float: left;
+     margin-left: 6.7%;
+  }
+} /* close 703px media query */
+
+@media screen and (min-width: 1280px) {
+
+  .what-is-ccd {
+     height: 65vh;
+     width: 100vw;
+     min-height: 550px;
+  }
+
+  .what-is-ccd .content {
+    margin-left: 5.8%;
+  }
+
+  .what-is-ccd .content, .what-is-ccd .image {
+    margin-top: 150px;
+  }
+} /* close 1280px media query */
+
+@media screen and (min-width: 1515px) {
+
+  .what-is-ccd {
+     height: 65vh;
+  }
+
+  .what-is-ccd .content {
+    margin-left: 11.6%;
+  }
+
+  .what-is-ccd .content, .what-is-ccd .image {
+    margin-top: 150px;
+  }
+
+  .what-is-ccd .image img {
+    width: 400px;
+  }
+} /* close 1515px media query */
+
+/* --------------- Causes section ------------------ */
+
+.causes {
+   background: url(../images/cupcakes1.jpg) no-repeat top right;
+   opacity: .9;
+   background-color: rgba(0,0,0,.3);
+   background-size: cover;
+   height: 60vh;
+}
+
+@media screen and (min-width: 390px ){
+  .causes {
+    height: 50vh;
+    padding-left: 12.5%;
+  }
+
+  .causes .content {
+    margin-top: 100px;
+  }
+}/* close 390px media query */
+
+@media screen and (min-width: 816px ){
+  .causes .content {
+    float: right;
+    margin: 100px 0 0 5.8%;
+  }
+}/* close 816px media query */
+
+@media screen and (min-width: 1600px ){
+  .causes .content {
+    margin: 100px 11.6% 0 0;
+  }
+}/* close 1600px media query */
+
+/* --------------- Take Action section ------------------ */
+.take-action {
+  padding-left: 12.5%;
+  background-color: #756483;
+} 
+ 
+
+.take-action button {
+   border: none;
+   padding: 16px 0;
+   width: 100%;
+   max-width: 300px;
+   margin: 16px 0;
+   color: #f4f3f2;
+   font-family: Roboto;
+   font-weight: 300;
+}
+
+  .take-action button:first-of-type {
+     background-color: #bc1642;
+  }
+
+
+  
+    .take-action button:first-of-type:hover {
+         background-color: #e81f54;
+      }
+
+
+  .take-action button:nth-of-type(2) {
+     background-color:  #e79433;
+  }
+
+
+      .take-action button:nth-of-type(2):hover {
+         background-color:  #faaa4d;
+      }
+
+
+@media screen and (min-width: 780px){
+
+  .take-action {
+     height: 60vh;
+     padding-top: 200px;
+  }
+} /* close 780px media query */
+
+@media screen and (min-width: 1200px){
+
+  .take-action-aside, .take-action .content {
+     float: left;
+  }
+
+  .take-action .content {
+      margin-right: 6.7%;
+  }
+}/* close 1200px media query */
+
+/* --------------- Footer ------------------ */
+footer {
+  text-align: right;
+  background-color: #bcc6c7;
+  font-size: .6em;
+
+}
+
+  footer p {
+    color: #4b4b4b;
+    padding: 20px 0;
+
+    /* remove global margin-bottom on paragraphs */
+
+    margin-bottom: 0; 
+  }
+
+/* ------------ Social Media Buttons ______________*/
+
+.social-media-buttons {
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+

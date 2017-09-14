@@ -1,0 +1,100 @@
+
+<head>
+  <meta charset="UTF-8">
+     <title>Purple Cupcakes orders</title>
+
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400italic,300,700,400' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+   <link rel="stylesheet" type="text/css" href="/css/style.css" />
+   <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/animate-custom.css" />
+   
+   </head>
+
+
+ <style>
+    .clipped-image {
+      max-height: 187px;
+      min-height: 187px;
+    }
+    .panel-heading {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+     }
+
+
+ </style>
+</head>
+
+
+ <br>
+    <section class="container">
+      {{> header}}
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Cupcake Menu
+      <!-- <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Cupcake Menu</h3> -->
+        </div>
+        <div class="panel-body">
+          {{#each products}}
+              {{#each this}}
+                    <div class="col-md-4 col-sm-6">
+                    <form action="/customer/addTOcart" method="post">
+                            <div class="sc-product-item thumbnail">
+                              <img data-name="product_image" class="clipped-image" src="{{this.imagepath}}" alt="cupcake">
+                              <div class="caption">
+                              <h4 data-name="product_name">{{this.name}}</h4>   
+                             <h4 data-name="product_desc">{{this.description}} </h4>
+                              <hr class="line">
+
+                         <div>
+                          <div class="form-group">
+                              <label>Quantity: </label>
+                              <select name="product_qty" class="form-control input-sm">                               
+                              <option value= '6'>   6</option>
+                              <option value= '12'> 12</option>
+                              <option value= '24'> 24</option>
+                              </select>
+                          </div>
+
+                          <div class="checkbox">
+                            <label>
+                            <input type="checkbox" name="gift_wrap" value="1"> Gift wrap
+                            </label>
+                        </div>
+                        <strong class="price pull-left">${{this.price}}</strong>
+
+                    <input name="product_price" value="{{this.price}}" type="hidden" />
+                    <input name="product_id"    value="{{this.id}}"    type="hidden" />
+                     <input name="product_name" value="{{this.name}}" type="hidden" />
+                    <button type="submit"  class="sc-add-to-cart btn btn-success btn-sm pull-right" roll ="button">Add to cart</a>
+                    </div>
+                      <div class="clearfix"></div>
+                      </div>
+                    </div>
+                    </form>
+                </div>
+            {{/each}}
+      {{/each}}
+
+             <p>{{req.session.cartItems}}</p>
+                        </div>
+                    </div>
+                  </div>
+         </div>
+        </div>
+                </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+   <script src="/js/responsive-nav.min.js"></script>

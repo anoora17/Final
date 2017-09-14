@@ -1,0 +1,64 @@
+<head>
+  <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400italic,300,700,400' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+   <link rel="stylesheet" type="text/css" href="/css/style.css" />
+   <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/animate-custom.css" />
+
+   </head>
+        
+  
+       {{>header}}
+		 <div class="row">
+        		<div class="col-md-4 col-md-offset-6 ">
+						<p><h1 style="color:#fff"> Please Register </h1></p>
+
+
+
+			    <form class="form-signup" id='signup' name="register" method="post" action="/customer/register">
+			      <div>
+			          <input type="text" class="form-control" name="firstname" placeholder="First Name" required="yes" autofocus="yes"/>
+			       </div>
+			      <br>
+			      <div>
+			          <input type="text" class="form-control" name="lastname" placeholder="Last Name" required="yes" autofocus="yes"/>
+			       </div>
+			      <br>
+			      <div>
+			           <input type="email" class="form-control" name="email" placeholder="Email Address" required="yes" autofocus="yes" /> </div>
+			      <br>
+			      <div>
+			          <input type="password" class="form-control" name="password" placeholder="Password" required="yes" autofocus="yes"/></div>
+			      <br>
+			      <div>
+			          <input type="password" class="form-control" name="confirm" placeholder="confirm" required="yes" autofocus="yes"/></div>
+			      <br>
+				 <div>
+
+			           <input type="text" class="form-control" name="addr1" placeholder="House #" required="yes" autofocus="yes" /> </div>
+			      <br>
+			      <div>
+			           <input type="text" class="form-control" name="addr2" placeholder="Street"  autofocus="yes" /> </div>
+			      <br>
+			      <div>
+			           <input type="text" class="form-control" name="city" placeholder="City" required="yes" autofocus="yes" /> </div>
+			      <br>
+			      <div>
+			           <input type="text" class="form-control" name="state" placeholder="State" required="" autofocus="yes" /> </div>
+			      <br>
+				 <div>
+			           <input type="text" class="form-control" name="zipcode" placeholder="zipcode" required="yes" autofocus="yes" /> </div>
+			      <br>
+			            <button class="btn btn-lg btn-sucess btn-block" type="submit">Sign Up</button>
+			    </form>
+				
+
+          <p> This is should be hidden but this is for demo purpose</p>
+
+        
+			   </div>
+			

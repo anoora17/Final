@@ -1,0 +1,67 @@
+
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" href="/css/bootstrap.css" />
+	<link rel="stylesheet" href="/css/main.css" />
+
+	<link rel="stylesheet" type="text/css" href="/css/animate-custom.css" />
+	<script src="/js/responsive-nav.min.js"></script>
+
+	<link rel="stylesheet" href="/css/styles.css" media="screen" title="no title">
+	<
+</head>
+
+		<div class="row top-30">
+      <div class="col-md-2 col-sm-2">
+        <a class="btn btn-default" href="/blog">Go to Orders-tbd</a>
+      </div>
+			<div class="col-md-2 col-sm-2">
+        <a class="btn btn-default" href="/admin/cms">New Order-tbd</a>
+      </div>
+      </div>
+			<div class="col-md-2 col-sm-2">
+        <a class="btn btn-default" href="/customers">Customers</a>
+      </div>
+    </div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="product-container">
+					<h1>Products</h1>
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Price</th>
+								<th>Description</th>
+								<th>Update Product</th>
+								<th>Delete Product</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr id="form-row">
+								<form id="product-form">
+									<td colspan="4">
+										<input placeholder="Enter name" id="product-name" type="text" />
+									</td>
+									<td colspan="4">
+										<input placeholder="Enter Price" id="product-price" type="text" />
+									</td>
+									<td colspan="4">
+										<input placeholder="Enter a description" id="product-desc" type="text" />
+									</td>
+									<td><button type="submit" class="btn btn-success">Create Product</button>
+									</td>
+								</form>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+
+		<!-- Custom Script -->
+		<script src="/js/product.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="/js/bootstrap.js"></script>

@@ -1,0 +1,38 @@
+<head>
+  <meta charset="UTF-8">
+     <title>Purple Cupcakes orders</title>
+
+ <href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+   <link rel="stylesheet" type="text/css" href="/css/style.css" />
+   <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/animate-custom.css" />
+    <script src="js/responsive-nav.min.js"></script>
+   </head>
+     <div class="header clearfix">
+       
+       <ul class="navbar-toggler-right">
+      
+    
+      
+        <li><a  href="/customer/addTOcart" style="color:#fff">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping cart <span  class="badge badge-pill badge-warning"> {{session.myCart.items}}</span></a></li>
+        <li ><a class="nav-link dropdown-toggle"  href="#" style="color:#fff">
+          <i class="fa fa-user" aria-hidden="true"></i>customer Account</a>
+          <ul> 
+          {{# if login}}
+            <li class="dropdown-item"><a href="/customer/logout" style="color:#fff">Logout</a></li>
+ 
+          {{else }}
+            <li class="dropdown-item"><a href="/customer/login" style="color:#fff" name = "login">Login</a></li>
+            <li class="dropdown-item"><a  href="/customer/register" style="color:#fff">Register</a></li>
+            {{/if}}
+          </ul>
+        </li>
+ 
+
+        </ul>
+
+   
+        </div>
