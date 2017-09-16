@@ -75,10 +75,10 @@ router.post('/cart',  passport.authenticate('local',
   myCart.add(myItem);
   // var items = cart.genrateArray();
   console.log(myCart)
-    //res.session.myCart = myCart
+    req.session.myCart = myCart
   
      db.Orderitems.create(myItem).then(function(dbProduct) {
-       myCart.add(dbProduct)
+      // myCart.add(dbProduct)
        console.log(myCart)
      res.render('shopingcart', {products: myCart , totalprice: myCart.totalPrice})
 
